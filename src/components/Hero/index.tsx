@@ -12,6 +12,13 @@ export default function Hero() {
     gsap.fromTo(buttonRef.current, { opacity: 0 }, { opacity: 1, delay: 1, duration: 1 });
   }, []);
 
+    const handleScroll = () => {
+    const about = document.getElementById('about');
+    if (about) {
+      about.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative min-h-screen hero-bg flex flex-col items-center justify-center text-center px-4">
     
@@ -23,8 +30,10 @@ export default function Hero() {
         <p ref={subtitleRef} className="mt-4 text-lg md:text-xl text-gray-400">
           Ajude a CPU a organizar o ciclo de processamento enquanto se diverte e aprende!
         </p>
+    
         <button
           ref={buttonRef}
+          onClick={handleScroll}
           className="mt-8 px-6 py-3 border border-white rounded-full text-white hover:bg-white hover:text-black transition"
         >
           Explore o Ciclo de von Neumann

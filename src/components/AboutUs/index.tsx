@@ -53,6 +53,7 @@ export default function About() {
 
   return (
     <div
+      id="about"
       ref={containerRef}
       className="bg-black min-h-screen text-white px-6 py-10 md:py-16 flex flex-col md:flex-row items-center justify-center gap-10"
     >
