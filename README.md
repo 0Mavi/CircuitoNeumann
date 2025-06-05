@@ -1,54 +1,101 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 Circuito Neumann - Landing Page
 
-Currently, two official plugins are available:
+Bem-vindo ao repositório da **Landing Page do Circuito Neumann**, um jogo educativo desenvolvido como parte do Trabalho de Conclusão de Curso (TCC). O objetivo do jogo é ensinar conceitos de arquitetura de computadores baseados na **Máquina de Von Neumann**, de forma interativa e divertida.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta landing page tem como função apresentar o jogo, seus conceitos, personagens e fornecer informações aos visitantes.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🖥️ Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- 🧠 **React + TypeScript**
+- ⚡ **Vite** - Build ultrarrápido
+- 🎨 **Tailwind CSS** 
+- 📦 **Node.js** - Ambiente de desenvolvimento
+- 🔗 **React Router** - Gerenciamento de rotas
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+CIRCUITONEUMANN
+├── public
+│   ├── models/
+│   ├── vite.svg
+│   └── index.html
+├── src
+│   ├── assets/          # Imagens e arquivos estáticos
+│   ├── components/      # Componentes reutilizáveis (Header, Footer, Hero, Info, AboutUs, etc.)
+│   ├── pages/           # Páginas principais (Home, 404)
+│   ├── layout/          # Estrutura base da aplicação
+│   ├── App.tsx          # Componente principal
+│   ├── main.tsx         # Ponto de entrada da aplicação
+│   ├── routes.tsx       # Configuração de rotas
+│   └── Global.css       # Estilização global
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Como Rodar Localmente
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Pré-requisitos:
+
+- Node.js (recomendado v18 ou superior)
+- npm ou yarn
+
+### Instalação:
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/0Mavi/CircuitoNeumann.git
 ```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd CircuitoNeumann
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+# ou
+yarn
+```
+
+4. Execute o projeto:
+
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+5. Acesse no navegador:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📚 Funcionalidades da Landing Page
+
+- 🧠 Apresentação do jogo educativo **Circuito Neumann**
+- 🎮 Sessão explicativa sobre o conceito da **Arquitetura de Von Neumann**
+- 👾 Apresentação dos personagens do jogo
+
+
+
+## 👨‍🎓 Sobre o Projeto
+
+Este projeto foi desenvolvido como parte do Trabalho de Conclusão de Curso (TCC) com o objetivo de facilitar o aprendizado sobre arquitetura de computadores através de um jogo educativo.
+
+
